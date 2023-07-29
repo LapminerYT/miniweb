@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!DOCTYPE html>
+    <html lang="vi">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Caro • KitoMC</title>
+        <meta name="description" content="Caro" />
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../assets/css/miniGame/caro.css" />
+        <style type="text/css"></style>
+      </head>
+      <body>
+        <header class="header" id="header"></header>
+        <div class="grid"></div>
+        <div class="stop hide">
+          <div class="nof">X thắng</div>
+          <div class="restart"><a href="">Chơi lại</a></div>
+        </div>
+        <script type="text/javascript"></script>
+        <script>
+          $(function () {
+            $("#header").load("../header.html");
+          });
+        </script>
+      </body>
+    </html>
+
+  
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <div class="grid"></div>
+    <div class="stop hide">
+      <div class="nof">X thắng</div>
+      <div class="restart"><a href="">Chơi lại</a></div>
+    </div>
+    <script type="text/javascript">
+      for (let i = 0; i < 30; i++) {
+        let slotTemp = ``;
+        for (let j = 0; j < 30; j++)
+          slotTemp += `<div class="slot" id="${i * 100 + j}">${
+            i * 100 + j
+          }</div>`;
+        let rowCreate = document.createElement("div");
+        rowCreate.classList.add("row");
+        rowCreate.innerHTML = slotTemp;
+        document.querySelector(".grid").appendChild(rowCreate);
+      }
+
+      var slotList = document.querySelectorAll(".slot");
+      for (let i = 0; i < slotList.length; i++) {
+        slotList[i].addEventListener("click", select);
+      }
+
+      let turn = 0,
+        slotIdX = 0,
+        slotIdO = 0;
+      let slotX = [],
+        slotO = [];
+      function select() {
+        if (turn === 0) {
+          this.classList.add("O");
+          slotO[slotIdO] = parseInt(this.id);
+          slotIdO++;
+          check(slotO);
+          turn = 1;
+        } else {
+          this.classList.add("X");
+          slotX[slotIdX] = parseInt(this.id);
+          slotIdX++;
+          check(slotX);
+          turn = 0;
+        }
+        this.removeEventListener("click", select);
+        this.innerHTML = null;
+      }
+      function check(slots) {
+        for (let i = 0; i < slots.length; i++) {
+          let checkRow = 0,
+            checkRight = 0,
+            checkCol = 0,
+            checkLeft = 0;
+          for (let j = 1; j < 5; j++)
+            for (let k = 0; k < slots.length; k++) {
+              if (slots[k] == slots[i] + 1 * j) {
+                checkRow++;
+              }
+              if (slots[k] == slots[i] + 101 * j) {
+                checkRight++;
+              }
+              if (slots[k] == slots[i] + 100 * j) {
+                checkCol++;
+              }
+              if (slots[k] == slots[i] + 99 * j) {
+                checkLeft++;
+              }
+            }
+          if (
+            checkRow == 4 ||
+            checkRight == 4 ||
+            checkCol == 4 ||
+            checkLeft == 4
+          ) {
+            if (turn == 0)
+              document.querySelector(".nof").textContent = "O thắng";
+            else document.querySelector(".nof").textContent = "X thắng";
+            document.querySelector(".hide").classList.remove("hide");
+            break;
+          }
+        }
+      }
+    </script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+      });
+    </script>
+  </body>
+</html>
