@@ -1,0 +1,15 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(104, 187, 139);
+  background: linear-gradient(
+    72deg,
+    rgba(104, 187, 139, 1) 0%,
+    rgba(0, 40, 236, 1) 100%
+  );
+}
