@@ -1,6 +1,11 @@
 const menuBar = `
 <nav class="nav">
-<a class="navLogo" href=""></a>
+<a class="navLogo" href="https://kitomcvn.github.io/miniweb">
+  <img
+    src="https://kitomcvn.github.io/miniweb/assets/media/icons/logo.png"
+    alt="Logo"
+  />
+</a>
 <div class="navButton">
   <i class="navButtonIcon fa-solid fa-bars"></i>
 </div>
