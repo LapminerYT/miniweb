@@ -1,9 +1,6 @@
 const menuBar = `
 <nav class="nav">
 <a class="navLogo" href=""></a>
-<button id="darkModeToggle">
-  <i class="fa fa-sun"></i>
-</button>
 <div class="navButton">
   <i class="navButtonIcon fa-solid fa-bars"></i>
 </div>
@@ -29,10 +26,10 @@ const menuBar = `
   <h5 class="menuBoxHeading">Mini Game</h5>
   <a
     class="menuLinks"
-    href="https://kitomcvn.github.io/miniweb/miniGame/Caro.html"
+    href="https://kitomcvn.github.io/miniweb/miniGame/ticTacToe.html"
   >
     <p class="menuLink">
-      <i class="menuLinkIcon fa-brands fa-microsoft"></i>Caro
+      <i class="menuLinkIcon fa-brands fa-microsoft"></i>Tic Tac Toe
     </p>
   </a>
 

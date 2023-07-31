@@ -1,15 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
+
+:root {
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --backgroundColor: #2b2b2b;
+}
+
 body {
-  background: rgb(104, 187, 139);
-  background: linear-gradient(
-    72deg,
-    rgba(104, 187, 139, 1) 0%,
-    rgba(0, 40, 236, 1) 100%
-  );
+  background: url(../media/backgrounds/chillVaiLim.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }

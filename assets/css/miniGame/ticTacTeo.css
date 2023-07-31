@@ -1,0 +1,196 @@
+::selection {
+  color: #fff;
+  background: #3b7c9c;
+}
+body {
+  color: #fff;
+}
+.selectBox,
+.playBoard,
+.resultBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.selectBox {
+  backdrop-filter: blur(50px);
+  background-color: rgba(36, 36, 36, 0.5);
+  padding: 20px 25px 25px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: calc(100vw - 30px);
+}
+.selectBox.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.selectBox header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
+}
+.selectBox .title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.selectBox .options {
+  display: flex;
+  width: 100%;
+}
+.options button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  background: #3b7c9c;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.options button:hover,
+.btn button:hover {
+  transform: scale(0.96);
+}
+.options button.playerX {
+  margin-right: 5px;
+}
+.options button.playerO {
+  margin-left: 5px;
+}
+.playBoard {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.playBoard.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.playBoard .details {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--backgroundColor);
+}
+.playBoard .players {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.players span {
+  position: relative;
+  z-index: 2;
+  color: #3b7c9c;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  transition: all 0.3 ease;
+}
+.players.active span:first-child {
+  color: #fff;
+}
+.players.active span:last-child {
+  color: #fff;
+}
+.players span:first-child {
+  color: #fff;
+}
+.players .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #3b7c9c;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.players.active .slider {
+  left: 50%;
+}
+.players.active span:first-child {
+  color: #3b7c9c;
+}
+.players.active span:nth-child(2) {
+  color: #fff;
+}
+.players.active .slider {
+  left: 50%;
+}
+.playArea {
+  margin-top: 20px;
+}
+.playArea section {
+  display: flex;
+  margin-bottom: 1px;
+}
+.playArea section span {
+  display: flex;
+  height: 90px;
+  width: 90px;
+  margin: 2px;
+  color: var(--whiteColor);
+  font-size: 40px;
+  line-height: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: var(--backgroundColor);
+}
+.resultBox {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: calc(100vw - 30px);
+  opacity: 0;
+  text-align: center;
+  backdrop-filter: blur(50px);
+  background-color: rgba(36, 36, 36, 0.5);
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.resultBox.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.resultBox .wonText {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.resultBox .wonText p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+.resultBox .btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #3b7c9c;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
