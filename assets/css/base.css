@@ -16,11 +16,10 @@
 }
 
 body {
-  background: rgb(53, 152, 104);
   background: linear-gradient(
     72deg,
-    rgba(53, 152, 104, 1) 0%,
-    rgba(1, 177, 179, 1) 100%
+    rgb(58, 58, 58) 0%,
+    rgb(46, 46, 46)
   );
-  height: 100vh;
+
 }

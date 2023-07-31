@@ -1,0 +1,47 @@
+body {
+  background-color: var(--backgroundColor);
+}
+
+.contentHeading {
+  font-size: 15px;
+  font-weight: bold;
+  color: #008834;
+}
+
+.contentHeading::after {
+  content: "";
+  display: flex;
+  width: 180px;
+  height: 2px;
+  background-color: #008834;
+  position: relative;
+  left: 86px;
+  bottom: 6px;
+}
+
+.contentH3 {
+  color: #fff;
+  display: flex;
+  font-size: 25px;
+}
+
+.mainBox {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contentBox {
+  margin-top: 20%;
+}
+
+.contentText {
+  color: #fff;
+  max-width: 960px;
+  margin-top: 6px;
+}
+
+.contentIcon {
+  margin-bottom: 2px;
+}
