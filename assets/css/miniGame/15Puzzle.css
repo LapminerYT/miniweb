@@ -24,11 +24,11 @@
     height: 244px;
     width: 244px;
     position: relative;
-    border: 3px solid #ffffff;
     margin: 10px auto 25px auto;
     display: none;
     border-radius: 8px;
 }
+
 #puzzle .cell-puzzle {
     width: 58px;
     height: 58px;
@@ -47,7 +47,7 @@
     border-radius: 5px;
 }
 #puzzle .cell-puzzle-zero {
-    background: transparent;
+    background: #7e7e7e;
     z-index: 50;
 }
 #puzzle > .row-1 {

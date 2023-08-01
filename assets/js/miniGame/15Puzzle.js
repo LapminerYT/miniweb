@@ -170,6 +170,6 @@ function checkWin() {
         clearTimeout(timer);
         $('#alert_puzzle').text('Bạn đã chiến thắng. Kỷ lục của bạn là ' + $('#board-time').text());
     } else if (loseString == matrixStr) {
-        $('#alert_puzzle').text('Bạn không có hy vọng để chiến thắng. Ấn nút "click to play" để chơi game mới');
+        $('#alert_puzzle').text('Bạn không có hy vọng để chiến thắng. Tải lại trang để chơi game mới');
     }
 }
