@@ -29,16 +29,13 @@ const menuBar = `
 
 <div class="menuBox">
   <h5 class="menuBoxHeading">Mini Game</h5>
-  <a
-    class="menuLinks"
-    href="https://kitomcvn.github.io/miniweb/miniGame/ticTacToe.html"
-  >
+  <a class="menuLinks" href="https://kitomcvn.github.io/miniweb/miniGame/ticTacToe.html">
     <p class="menuLink">
       <i class="menuLinkIcon fa-brands fa-microsoft"></i>Tic Tac Toe
     </p>
   </a>
 
-  <a class="menuLinks" href="https://KitoMCVN.github.io/MiniWeb/miniGame/15Puzzle.html">
+  <a class="menuLinks" href="https://kitomcvn.github.io/MiniWeb/miniGame/15Puzzle.html">
     <p class="menuLink">
     <i class="menuLinkIcon fa-solid fa-square"></i>15 Puzzle
     </p>
