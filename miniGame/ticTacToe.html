@@ -1,99 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/media/icons/logo.png" />
-    <meta name="theme-color" content="#66cee7" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/media/icons/logo.png" />
+        <meta name="theme-color" content="#66cee7" />
 
-    <!-- Thẻ Meta Chính -->
-    <title>Tic Tac Toe • Mini Web</title>
-    <meta name="title" content="Trang chủ • Mini Web by KitoMC" />
-    <meta
-      name="description"
-      content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng"
-    />
+        <!-- Thẻ Meta Chính -->
+        <title>Tic Tac Toe • Mini Web</title>
+        <meta name="title" content="Trang chủ • Mini Web by KitoMC" />
+        <meta name="description" content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng" />
 
-    <!-- Open Graph - Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="" />
-    <meta
-      property="og:url"
-      content="https://KitoMCVN.github.io/MiniWeb/miniGame/ticTacToe.html"
-    />
-    <meta property="og:title" content="Tic Tac Teo • Mini Web KitoMC" />
-    <meta
-      property="og:description"
-      content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng"
-    />
-    <meta property="og:image" content="" />
+        <!-- Open Graph - Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="" />
+        <meta property="og:url" content="https://KitoMCVN.github.io/MiniWeb/miniGame/ticTacToe.html" />
+        <meta property="og:title" content="Tic Tac Teo • Mini Web KitoMC" />
+        <meta property="og:description" content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng" />
+        <meta property="og:image" content="" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://KitoMCVN.github.io/MiniWeb/miniGame/ticTacToe.html"
-    />
-    <meta property="twitter:title" content="Tic Tac Teo • Mini Web KitoMC" />
-    <meta
-      property="twitter:description"
-      content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng"
-    />
-    <meta property="twitter:image" content="" />
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://KitoMCVN.github.io/MiniWeb/miniGame/ticTacToe.html" />
+        <meta property="twitter:title" content="Tic Tac Teo • Mini Web KitoMC" />
+        <meta property="twitter:description" content="Một trang web nho nhỏ để giải trí sao những giờ làm viêc căn thăng" />
+        <meta property="twitter:image" content="" />
 
-    <!-- Css - Js - Script -->
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/menu.css" />
-    <link rel="stylesheet" href="../assets/css/miniGame/ticTacToe.css" />
-    <script src="../assets/fontAwesome/js/all.js"></script>
-    <script src="../assets/js/main.js" defer></script>
-    <script src="../assets/js/menu.js" defer></script>
-    <script src="../assets/js//miniGame/ticTacToe.js" defer></script>
-  </head>
-  <body>
-    <header class="header" id="header"></header>
-    <!-- Box Chọn-->
-    <div class="selectBox">
-      <header>Tic Tac Toe</header>
-      <div class="content">
-        <div class="title">Chọn mà bạn muốn trở thành?</div>
-        <div class="options">
-          <button class="playerX">Chơi (X)</button>
-          <button class="playerO">Chơi (O)</button>
+        <!-- Css - Js - Script -->
+        <link rel="stylesheet" href="../assets/css/base.css" />
+        <link rel="stylesheet" href="../assets/css/menu.css" />
+        <link rel="stylesheet" href="../assets/css/miniGame/ticTacToe.css" />
+        <script src="../assets/fontAwesome/js/all.js"></script>
+        <script src="../assets/js/main.js" defer></script>
+        <script src="../assets/js/menu.js" defer></script>
+        <script src="../assets/js//miniGame/ticTacToe.js" defer></script>
+    </head>
+    <body>
+        <header class="header" id="header"></header>
+        <!-- Box Chọn-->
+        <div class="selectBox">
+            <header>Tic Tac Toe</header>
+            <div class="content">
+                <div class="title">Chọn mà bạn muốn trở thành?</div>
+                <div class="options">
+                    <button class="playerX">Chơi (X)</button>
+                    <button class="playerO">Chơi (O)</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Bảng Chơi -->
-    <div class="playBoard">
-      <div class="details">
-        <div class="players">
-          <span class="Xturn">Lược X</span>
-          <span class="Oturn">Lược O</span>
-          <div class="slider"></div>
+        <!-- Bảng Chơi -->
+        <div class="playBoard">
+            <div class="details">
+                <div class="players">
+                    <span class="Xturn">Lược X</span>
+                    <span class="Oturn">Lược O</span>
+                    <div class="slider"></div>
+                </div>
+            </div>
+            <div class="playArea">
+                <section>
+                    <span class="box1"></span>
+                    <span class="box2"></span>
+                    <span class="box3"></span>
+                </section>
+                <section>
+                    <span class="box4"></span>
+                    <span class="box5"></span>
+                    <span class="box6"></span>
+                </section>
+                <section>
+                    <span class="box7"></span>
+                    <span class="box8"></span>
+                    <span class="box9"></span>
+                </section>
+            </div>
         </div>
-      </div>
-      <div class="playArea">
-        <section>
-          <span class="box1"></span>
-          <span class="box2"></span>
-          <span class="box3"></span>
-        </section>
-        <section>
-          <span class="box4"></span>
-          <span class="box5"></span>
-          <span class="box6"></span>
-        </section>
-        <section>
-          <span class="box7"></span>
-          <span class="box8"></span>
-          <span class="box9"></span>
-        </section>
-      </div>
-    </div>
-    <!-- Thông Báo Thắng -->
-    <div class="resultBox">
-      <div class="wonText"></div>
-      <div class="btn"><button>Chơi lại</button></div>
-    </div>
-  </body>
+        <!-- Thông Báo Thắng -->
+        <div class="resultBox">
+            <div class="wonText"></div>
+            <div class="btn"><button>Chơi lại</button></div>
+        </div>
+    </body>
 </html>

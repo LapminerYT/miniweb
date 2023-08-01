@@ -1,47 +1,97 @@
-body {
-  background-color: var(--backgroundColor);
-}
-
 .contentHeading {
-  font-size: 15px;
-  font-weight: bold;
-  color: #008834;
+    font-size: 15px;
+    font-weight: bold;
+    color: #008834;
 }
 
 .contentHeading::after {
-  content: "";
-  display: flex;
-  width: 180px;
-  height: 2px;
-  background-color: #008834;
-  position: relative;
-  left: 86px;
-  bottom: 6px;
+    content: '';
+    display: flex;
+    width: 180px;
+    height: 2px;
+    background-color: #008834;
+    position: relative;
+    left: 86px;
+    bottom: 6px;
 }
 
 .contentH3 {
-  color: #fff;
-  display: flex;
-  font-size: 25px;
+    color: #fff;
+    display: flex;
+    font-size: 25px;
 }
 
 .mainBox {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.contentBox {
-  margin-top: 18%;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: calc(100vh - 164px);
+    display: flex;
+    align-items: center;
 }
 
 .contentText {
-  color: #fff;
-  max-width: 960px;
-  margin-top: 6px;
+    color: #fff;
+    max-width: 860px;
+    margin-top: 6px;
 }
 
 .contentIcon {
-  margin-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.linkBox {
+    margin-right: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linkItem {
+    flex-grow: 1;
+    flex-basis: 180px;
+    background-color: #222;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.linkItem:hover {
+    background: #1d1d1d;
+}
+
+.linkIcon {
+    font-size: 36px;
+    padding: 5px;
+    margin-right: 8px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.linkItem h5 {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.linkItem p {
+    font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.youtubeItem:hover {
+    color: #fd4646;
+}
+
+.websiteItem:hover {
+    color: #00ff73;
 }
