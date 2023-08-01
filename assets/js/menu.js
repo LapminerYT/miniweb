@@ -35,7 +35,7 @@ const menuBar = `
     </p>
   </a>
 
-  <a class="menuLinks" href="https://kitomcvn.github.io/MiniWeb/miniGame/15Puzzle.html">
+  <a class="menuLinks" href="https://kitomcvn.github.io/miniweb/miniGame/15Puzzle.html">
     <p class="menuLink">
     <i class="menuLinkIcon fa-solid fa-square"></i>15 Puzzle
     </p>
