@@ -72,6 +72,9 @@ const menuBar = `
   </a>
 </div>
 </div>
+
+<div class="overlay"></div>
+
 `;
 
 const menuContainer = document.querySelector('#header');

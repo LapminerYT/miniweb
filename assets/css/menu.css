@@ -1,104 +1,121 @@
 /* Navbar  */
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .navLogo img {
-  width: 46px;
-  border-radius: 6px;
-  margin-top: 14px;
+    width: 46px;
+    border-radius: 6px;
+    margin-top: 14px;
 }
 
 .navButton {
-  cursor: pointer;
-  margin-top: 16px;
+    cursor: pointer;
+    margin-top: 16px;
 }
 
 .navButtonIcon {
-  color: #ffffff;
-  font-size: 30px;
+    color: #ffffff;
+    font-size: 30px;
 }
 
 /* MenuBar */
 
 .menu {
-  width: 220px;
-  height: 100vh;
-  backdrop-filter: blur(50px);
-  background-color: rgba(36, 36, 36, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  padding: 0 12px;
-  transform: translatex(-140%);
-  transition: all 0.5s ease;
-  color: #ffffff;
+    width: 220px;
+    height: 100vh;
+    backdrop-filter: blur(50px);
+    background-color: rgba(36, 36, 36, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0 12px;
+    transform: translatex(-140%);
+    transition: all 0.5s ease;
+    color: #ffffff;
 }
 
 .menu a {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 #header.header.active .menu {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 .menuButton {
-  font-size: 20px;
-  background-color: #333333;
-  border-radius: 50%;
-  position: absolute;
-  right: -8%;
-  top: 10px;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+    font-size: 20px;
+    background-color: #333333;
+    border-radius: 50%;
+    position: absolute;
+    right: -8%;
+    top: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .menuButtonIcon {
-  color: #ffffff;
-  padding: 0px 5px;
+    color: #ffffff;
+    padding: 0px 5px;
 }
 
 .menuBox {
-  padding: 12px 0;
-  border-bottom: #3f3f3f 1px solid;
+    padding: 12px 0;
+    border-bottom: #3f3f3f 1px solid;
 }
 
 .menuLink {
-  cursor: pointer;
-  padding: 10px 12px;
-  border-radius: 6px;
-  font-size: 14px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    cursor: pointer;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menuLinkIcon {
-  margin-right: 20px;
-  font-size: 18px;
-  transform: translateY(1px);
+    margin-right: 20px;
+    font-size: 18px;
+    transform: translateY(1px);
 }
 
 .menuLink:hover {
-  background-color: #3d3d3d;
+    background-color: #3d3d3d;
 }
 
 .menuLinks {
-  text-decoration: none;
-  font-weight: 500;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .menuBoxHeading {
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: 8px;
-  margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 998;
+    position: fixed;
+    background: none;
+    display: none;
+    transition: background linear 5s;
+}
+
+.active .overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.8);
 }
