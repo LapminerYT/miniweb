@@ -47,7 +47,7 @@
     border-radius: 5px;
 }
 #puzzle .cell-puzzle-zero {
-    background: #7e7e7e;
+    background: transparent;
     z-index: 50;
 }
 #puzzle > .row-1 {
