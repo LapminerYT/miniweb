@@ -50,6 +50,16 @@
     background: transparent;
     z-index: 50;
 }
+
+#puzzle .cell-puzzle:hover {
+    background-color: #276d8c;
+    color: #cacaca;
+}
+
+#puzzle .cell-puzzle-zero:hover {
+    background: transparent;
+}
+
 #puzzle > .row-1 {
     top: 0;
 }
