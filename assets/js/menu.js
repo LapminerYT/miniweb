@@ -38,9 +38,9 @@ const menuBar = `
     </p>
   </a>
 
-  <a class="menuLinks" href="">
+  <a class="menuLinks" href="https://KitoMCVN.github.io/MiniWeb/miniGame/15Puzzle.html">
     <p class="menuLink">
-      <i class="menuLinkIcon fa-solid fa-calendar-days"></i>Update Soon
+    <i class="menuLinkIcon fa-solid fa-square"></i>15 Puzzle
     </p>
   </a>
 </div>
@@ -77,18 +77,18 @@ const menuBar = `
 </div>
 `;
 
-const menuContainer = document.querySelector("#header");
+const menuContainer = document.querySelector('#header');
 
 menuContainer.innerHTML = menuBar;
 
-const menuOpen = document.querySelector(".navButton");
-const menuClose = document.querySelector(".menuButton");
-const header = document.querySelector(".header");
+const menuOpen = document.querySelector('.navButton');
+const menuClose = document.querySelector('.menuButton');
+const header = document.querySelector('.header');
 
-menuOpen.addEventListener("click", function () {
-  header.classList.add("active");
+menuOpen.addEventListener('click', function () {
+    header.classList.add('active');
 });
 
-menuClose.addEventListener("click", function () {
-  header.classList.remove("active");
+menuClose.addEventListener('click', function () {
+    header.classList.remove('active');
 });

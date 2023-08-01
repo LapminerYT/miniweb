@@ -22,11 +22,7 @@
 }
 
 .mainBox {
-    margin-left: 40px;
-    margin-right: 40px;
-    height: calc(100vh - 164px);
-    display: flex;
-    align-items: center;
+    margin: 140px 40px;
 }
 
 .contentText {
